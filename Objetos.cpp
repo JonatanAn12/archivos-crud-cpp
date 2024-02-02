@@ -13,13 +13,13 @@ class alumnos {
 int main() {
     
  alumnos alumno1;
- alumno1.nombre = "juan";
- alumno1.edad = 25;
+ alumno1.nombre = "Jaime";
+ alumno1.edad = 23;
  alumno1.nota = 7.2;
  return 0;
 
  alumnos alumno2;
- alumno2.nombre = "jaime";
+ alumno2.nombre = "Luis";
  alumno2.edad = 34;
  alumno2.nota= 8.2;
  return 0;
