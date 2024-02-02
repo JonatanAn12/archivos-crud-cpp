@@ -28,8 +28,8 @@ void imprimirPersona(const Persona& persona) {
 int main() {
     vector<Persona> personas;
 
-personas.push_back(Persona("Tomas", 25));
-    personas.push_back(Persona("Albertha", 32));
+personas.push_back(Persona("Tomas", 20));
+    personas.push_back(Persona("Albertha", 21));
 
     cout << "Personas en la lista:" << endl;
     for (const auto& persona : personas) {
@@ -42,7 +42,7 @@ personas.push_back(Persona("Tomas", 25));
     });
 
     if (it != personas.end()) {
-        it-> edad = 40;
+        it-> edad = 30;
         cout << "Edad de Tomas actualizada." << endl;
     } else {
         cout << "Persona no encontrada." << endl;
