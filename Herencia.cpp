@@ -28,7 +28,7 @@ class coche : public vehiculo {
 };
 
 int main(){
-    coche miCoche("Toyota", 2);
+    coche miCoche("Toyota", 5);
     miCoche.mostrarInfo();
     return 0;
 }
