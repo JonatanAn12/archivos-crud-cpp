@@ -28,22 +28,22 @@ void imprimirPersona(const Persona& persona) {
 int main() {
     vector<Persona> personas;
 
-personas.push_back(Persona("Ian", 29));
-    personas.push_back(Persona("Luz", 27));
+personas.push_back(Persona("Marc", 29));
+    personas.push_back(Persona("Lucia", 27));
 
     cout << "Personas en la lista:" << endl;
     for (const auto& persona : personas) {
         imprimirPersona(persona);
     }
 
-    string nombreActualizar = "Ian";
+    string nombreActualizar = "Marc";
     auto it = find_if(personas.begin(), personas.end(), [nombreActualizar](const Persona& p) {
         return p.getNombre() == nombreActualizar;
     });
 
     if (it != personas.end()) {
         it-> edad = 35;
-        cout << "Edad de Ian actualizada." << endl;
+        cout << "Edad de Marc actualizada." << endl;
     } else {
         cout << "Persona no encontrada." << endl;
     }
@@ -53,13 +53,13 @@ personas.push_back(Persona("Ian", 29));
         imprimirPersona(persona);
     }
 
-    string nombreEliminar = "Luz";
+    string nombreEliminar = "Lucia";
     auto eraseIt = remove_if(personas.begin(), personas.end(), [nombreEliminar](const Persona& p) {
         return p.getNombre() == nombreEliminar;
     });
 
     personas.erase(eraseIt, personas.end());
-    cout << "Persona Luz eliminada." << endl;
+    cout << "Persona Lucia eliminada." << endl;
 
     cout << "Personas después de la eliminación:" << endl;
     for (const auto& persona : personas) {
