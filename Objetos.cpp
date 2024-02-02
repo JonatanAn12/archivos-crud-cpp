@@ -13,15 +13,15 @@ class alumnos {
 int main() {
     
  alumnos alumno1;
- alumno1.nombre = "Pedro";
- alumno1.edad = 24;
- alumno1.nota = 7.8;
+ alumno1.nombre = "Jonatan";
+ alumno1.edad = 18;
+ alumno1.nota = 9.9;
  return 0;
 
  alumnos alumno2;
- alumno2.nombre = "Luis";
- alumno2.edad = 34;
- alumno2.nota= 6.2;
+ alumno2.nombre = "Nikoll";
+ alumno2.edad = 21;
+ alumno2.nota= 9.9;
  return 0;
 
  cout << alumno1.nombre << endl;
