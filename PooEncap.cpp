@@ -32,8 +32,8 @@ class persona {
 int main()
 {
 persona persona1;
-persona1.setNombre("Pedro");
-persona1.setEdad(30);
+persona1.setNombre("Julian");
+persona1.setEdad(31);
 
 cout << "Nombre: " << persona1.getNombre() << endl;
 cout << "Edad: " << persona1.getEdad() << endl;
