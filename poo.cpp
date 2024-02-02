@@ -14,8 +14,8 @@ class persona {
 int main ()
 {
     persona persona1;
-    persona1.nombre = "Valentina";
-    persona1.edad = 24;
+    persona1.nombre = "Juan";
+    persona1.edad = 25;
     persona1.saludar();
    
     return 0;
